@@ -163,7 +163,7 @@ class OpenCage extends AbstractHttpProvider implements LocaleAwareProvider
      */
     protected function guessLocality(array $components)
     {
-        $localityKeys = array('city', 'town' , 'village', 'hamlet');
+        $localityKeys = array('city', 'town' , 'village', 'hamlet', 'county');
 
         return $this->guessBestComponent($components, $localityKeys);
     }
